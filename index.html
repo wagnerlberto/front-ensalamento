@@ -9,57 +9,59 @@
   <script src="script.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
 
 
   <header>
-    <div>Ensalamento Catuaí Anhanguera</div>
   </header>
 
 
-  <nav>
-    <ul>
-      <li style="background-color: Khaki;">
-        <a href="index.html">
-          <span class="fas fa-home"></span><br>
-          Principal
-        </a>
-      </li>
-      <li>
-        <a href="matutino.html?edtProcura=">
-          <span class="fas fa-sun"></span><br>
-          Matutino
-        </a>
-      </li>
-      <li>
-        <a href="vespertino.html?edtProcura=">
-          <span class="fas fa-cloud-sun"></span><br>
-          Vespertino
-        </a>
-      </li>
-      <li>
-        <a href="noturno.html?edtProcura=">
-          <span class="fas fa-moon"></span><br>
-          Noturno
-        </a>
-      </li>
-    </ul>
-  </nav>
-
-
-  <section id="sectionMensagemHome">
+  <section id="section-mensagem-home">
     <h2>Ensalamento Anhanguera Catuaí</h2>
-    <p>&nbsp;&nbsp;&nbsp;Aplicativo de apoio à localização de salas
-      no campus Catuaí da universidade Anhanguera Pitágoras Unopar de
-      Londrina. Versão 2.00</p>
+    <p>&nbsp;&nbsp;&nbsp;Aplicativo de apoio à localização de salas no campus Catuaí da universidade Anhanguera Pitágoras Unopar de Londrina. Versão 2.00</p>
+    <p>Autor: prof. esp. Wagner L. Berto | Todos os direitos reservados.</p>
+  </section>
+
+
+  <section id="section-lista-salas">
+    <article class='articleLinhaTabela'>
+      <div class='disciplinaLinhaTabela' style="border-top: 1px solid gray">DISCIPLINA</div>
+      <span class='diaDaSemanaLinhaTabela'>DIA DA SEMANA</span>
+      <span class='professorLinhaTabela'>PROFESSOR</span>
+      <div class='salaLinhaTabela'>SALA</div>
+    </article>
   </section>
 
 
   <footer>
-    <p>Autor: prof. esp. Wagner L. Berto | Todos os direitos reservados.</p>
+
+    <nav>
+      <ul>
+        <li id="btn-principal" style="background-color: Khaki;">
+          <span class="fas fa-home"></span><br>
+          Principal
+        </li>
+        <li id="btn-matutino">
+          <span class="fas fa-sun"></span><br>
+          Matutino
+        </li>
+        <li>
+          <a href="vespertino.html?edtProcura=">
+            <span class="fas fa-cloud-sun"></span><br>
+            Vespertino
+          </a>
+        </li>
+        <li>
+          <a href="noturno.html?edtProcura=">
+            <span class="fas fa-moon"></span><br>
+            Noturno
+          </a>
+        </li>
+      </ul>
+    </nav>
+
   </footer>
 
 

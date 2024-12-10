@@ -6,7 +6,7 @@
 
 header{
   background-color: orange;
-  padding: 4px 10px;
+  /* padding: 4px 10px; */
   font-size:large;
   font-weight: bold;
   text-align: center;
@@ -14,8 +14,12 @@ header{
 
 footer{
   background-color: orange;
-  padding: 1px 10px;
-  font-size:xx-small;
+  /* padding: 1px 10px; */
+  font-size:small;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
 }
 
 nav{
@@ -39,6 +43,7 @@ nav ul li{
 nav ul li:hover{
   background-color: Khaki;
   border-bottom:1px solid black;
+  cursor: pointer;
 }
 
 nav ul li a{
@@ -46,7 +51,7 @@ nav ul li a{
   color: black; 
 }
 
-#sectionMensagemHome{
+#section-mensagem-home{
   background-color: lightgray;
   padding: 0px 10px;
   margin: 10px;
@@ -91,9 +96,13 @@ nav ul li a{
   padding-bottom: 4px;
 }
 
+.diaDaSemanaLinhaTabela{
+  font-style: italic;
+}
+
 .professorLinhaTabela{
   float:right;
- }
+}
 
 .salaLinhaTabela{
   clear: both;
