@@ -7,8 +7,9 @@
 header{
   background-color: orange;
   padding: 4px 10px;
-  font-size:xx-large;
+  font-size:large;
   font-weight: bold;
+  text-align: center;
 }
 
 footer{
@@ -20,6 +21,7 @@ footer{
 nav{
   background-color: darkorange;
   padding:1px;
+  text-align: center;
 }
 
 nav ul{
