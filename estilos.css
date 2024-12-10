@@ -111,4 +111,9 @@ nav ul li a{
   text-align: center;
   background-color: Khaki;
 }
-  
+
+#carregando-message{
+  font-size: xx-large;
+  text-align: center;
+  font-style: italic;
+}
