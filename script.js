@@ -7,8 +7,8 @@ window.onload = function() {
   const sectionMensagemHome = document.querySelector('#section-mensagem-home');
   const sectionListaSalas = document.querySelector('#section-lista-salas');
   // Usar o URL abaixo em produção
-  // const urlBack = "https://back-ensalamento.onrender.com";
-  const urlBack = "http://localhost:3000";
+  const urlBack = "https://back-ensalamento.onrender.com";
+  // const urlBack = "http://localhost:3000";
 
   function atualizarPrincipal() {
     // Mostrar mensagem de boas vindas
