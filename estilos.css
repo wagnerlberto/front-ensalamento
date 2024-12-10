@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+  font-family:sans-serif;
+/*  border: 1px solid red; */
+}
+
+header{
+  background-color: orange;
+  padding: 4px 10px;
+  font-size:xx-large;
+  font-weight: bold;
+}
+
+footer{
+  background-color: orange;
+  padding: 1px 10px;
+  font-size:xx-small;
+}
+
+nav{
+  background-color: darkorange;
+  padding:1px;
+}
+
+nav ul{
+  padding-inline-start: 10px;
+}
+
+nav ul li{
+  display: inline-block;
+  background-color: orange;
+  padding:6px;
+  border:1px solid gray;
+  border-radius: 10%;
+}
+
+nav ul li:hover{
+  background-color: Khaki;
+  border-bottom:1px solid black;
+}
+
+nav ul li a{
+  text-decoration: none; 
+  color: black; 
+}
+
+#sectionMensagemHome{
+  background-color: lightgray;
+  padding: 0px 10px;
+  margin: 10px;
+  border:1px solid gray;
+  border-radius:2%;
+}
+
+#sectionMensagemHome h2{
+  text-align: center;
+}
+
+#sectionMensagemHome p{
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+#sectionProcura{
+  background-color: orange;
+  padding: 10px;
+}
+
+#sectionProcura input{
+  padding: 4px;
+  border-radius: 2%;
+  background-color: Khaki;
+  width: 300px;
+}
+
+#sectionProcura button{
+  padding: 4px;
+  background-color: greenyellow;
+}
+
+.articleLinhaTabela{
+  padding-top: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.disciplinaLinhaTabela{
+  font-size:large;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+.professorLinhaTabela{
+  float:right;
+ }
+
+.salaLinhaTabela{
+  clear: both;
+  padding-top: 4px;
+  font-weight: bold;
+  text-align: center;
+  background-color: Khaki;
+}
+  
