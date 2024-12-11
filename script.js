@@ -2,8 +2,8 @@ window.onload = function() {
   // console.log('>>>PASSOU POR AQUI<<<');
   
   // Usar o URL abaixo em produção
-  // const urlBase = "https://back-ensalamento.onrender.com";
-  const urlBase = "http://localhost:3000";
+  const urlBase = "https://back-ensalamento.onrender.com";
+  // const urlBase = "http://localhost:3000";
 
   const btnPrincipal = document.querySelector('#btn-principal');
   const sectionMensagemHome = document.querySelector('#section--mensagem-home');
