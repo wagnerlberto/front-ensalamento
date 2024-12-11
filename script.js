@@ -27,7 +27,7 @@ window.onload = function() {
     // Esconder lista de salas
     sectionListaSalas.style.display = "none";
     // Colorir botão ativo
-    btnPrincipal.style.backgroundColor = "goldenrod";
+    btnPrincipal.style.backgroundColor = "Tan";
     // Descolorir botões inativos
     btnMatutino.style.backgroundColor = "darkorange";
   }
@@ -40,7 +40,7 @@ window.onload = function() {
     // Mostrar lista de salas
     sectionListaSalas.style.display = "";
     // Colorir botão ativo
-    btnMatutino.style.backgroundColor = "goldenrod";
+    btnMatutino.style.backgroundColor = "Tan";
     // Descolorir botões inativos
     btnPrincipal.style.backgroundColor = "darkorange";
   }
