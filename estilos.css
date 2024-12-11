@@ -10,7 +10,7 @@ body{
 
 footer{
   background-color: OrangeRed;
-  /* padding: 1px 10px; */
+  font-size: small;
   width: 95%;
   text-align: center;
   position: fixed;
