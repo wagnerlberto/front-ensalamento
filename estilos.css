@@ -1,7 +1,11 @@
 *{
   box-sizing: border-box;
   font-family:sans-serif;
-/*  border: 1px solid red; */
+}
+
+body{
+  width: 95%;
+  margin: 0 auto;
 }
 
 header{
@@ -13,9 +17,9 @@ header{
 }
 
 footer{
-  background-color: orange;
+  background-color: darkorange;
   /* padding: 1px 10px; */
-  width: 100%;
+  width: 95%;
   text-align: center;
   position: fixed;
   bottom: 0;
@@ -23,12 +27,12 @@ footer{
 
 nav{
   background-color: darkorange;
-  padding:1px;
+  /* padding:1px; */
   text-align: center;
 }
 
 nav ul{
-  padding-inline-start: 10px;
+  padding-inline-start: 0px;
 }
 
 nav ul li{
@@ -50,7 +54,7 @@ nav ul li a{
   color: black; 
 }
 
-#section-mensagem-home{
+#section--mensagem-home{
   background-color: lightgray;
   padding: 0px 10px;
   margin: 10px;
@@ -58,11 +62,11 @@ nav ul li a{
   border-radius:2%;
 }
 
-#sectionMensagemHome h2{
+#section--mensagem-home h2{
   text-align: center;
 }
 
-#sectionMensagemHome p{
+#section--mensagem-home p{
   letter-spacing: 1px;
   text-align: justify;
 }
@@ -81,31 +85,31 @@ nav ul li a{
 #btn-procurar{
   background-color: Khaki;
   padding: 10px;
-  width: 10%;
+  /* width: 10%; */
   border-radius: 10px;
   margin-left: 10px;
 }
 
-.articleLinhaTabela{
+.article--linha-tabela{
   padding-top: 10px;
   border-bottom: 1px solid gray;
 }
 
-.disciplinaLinhaTabela{
+.disciplina--linha-tabela{
   font-size:large;
   font-weight: bold;
   padding-bottom: 4px;
 }
 
-.dia-da-semana__LinhaTabela{
+.dia-da-semana--linha-tabela{
   font-style: italic;
 }
 
-.professorLinhaTabela{
+.professor--linha-tabela{
   float:right;
 }
 
-.salaLinhaTabela{
+.sala--linha-tabela{
   background-color: Khaki;
   clear: both;
   padding-top: 4px;

@@ -6,7 +6,7 @@ window.onload = function() {
   // const urlBase = "http://localhost:3000";
 
   const btnPrincipal = document.querySelector('#btn-principal');
-  const sectionMensagemHome = document.querySelector('#section-mensagem-home');
+  const sectionMensagemHome = document.querySelector('#section--mensagem-home');
   const btnMatutino = document.querySelector('#btn-matutino');
   const sectionProcura = document.querySelector('#section-procura');
   const edtProcura = document.querySelector('#edt-procura');
@@ -49,32 +49,35 @@ window.onload = function() {
 
   const criarSala = (sala) => {
     return `
-      <article class='articleLinhaTabela'>
-        <div class='disciplinaLinhaTabela'>${sala.disciplina}</div>
-        <span class='dia-da-semana__LinhaTabela'>${sala.dia_da_semana}</span>
-        <span class='professorLinhaTabela'>${sala.professor}</span>
-        <div class='salaLinhaTabela'>${sala.sala}</div>
+      <article class='article--linha-tabela'>
+        <div class='disciplina--linha-tabela'>${sala.disciplina}</div>
+        <span class='dia-da-semana--linha-tabela'>${sala.dia_da_semana}</span>
+        <span class='professor--linha-tabela'>${sala.professor}</span>
+        <div class='sala--linha-tabela'>${sala.sala}</div>
       </article> 
     `;
   }
 
   async function atualizarLista () {
+    // Esconder lista de salas
+    sectionListaSalas.innerHTML = "";
     // Mostrar mensagem de carregando
     carregandoMessage.style.display = "";
 
+    // Montar URL a submeter
     const param = `/${edtProcura.value}`;
     const path = `/ensalamentoM`;
     const endPoint = `${urlBase}${path}${param}`;
+    // Submeter procura
     const res = await fetch(`${endPoint}`);
     const data = await res.json();
 
+    // Montar lista de salas
     let output = "";
     for(let sala of data)
       output += criarSala(sala);
-
-    document
-    .querySelector('#section-lista-salas')
-    .innerHTML = output;
+    // Mostrar lista de salas
+    sectionListaSalas.innerHTML = output;
 
     // Esconder mensagem de carregando
     carregandoMessage.style.display = "none";
