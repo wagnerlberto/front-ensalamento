@@ -27,9 +27,9 @@ window.onload = function() {
     // Esconder lista de salas
     sectionListaSalas.style.display = "none";
     // Colorir botão ativo
-    btnPrincipal.style.backgroundColor = "Khaki";
+    btnPrincipal.style.backgroundColor = "goldenrod";
     // Descolorir botões inativos
-    btnMatutino.style.backgroundColor = "orange";
+    btnMatutino.style.backgroundColor = "darkorange";
   }
 
   function atualizarMatutino() {
@@ -40,9 +40,9 @@ window.onload = function() {
     // Mostrar lista de salas
     sectionListaSalas.style.display = "";
     // Colorir botão ativo
-    btnMatutino.style.backgroundColor = "Khaki";
+    btnMatutino.style.backgroundColor = "goldenrod";
     // Descolorir botões inativos
-    btnPrincipal.style.backgroundColor = "orange";
+    btnPrincipal.style.backgroundColor = "darkorange";
   }
 
   btnPrincipal.addEventListener('click', () => {
