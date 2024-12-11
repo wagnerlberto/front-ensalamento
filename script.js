@@ -2,8 +2,8 @@ window.onload = function() {
   // console.log('>>>PASSOU POR AQUI<<<');
   
   // Usar o URL abaixo em produção
-  const urlBase = "https://back-ensalamento.onrender.com";
-  // const urlBase = "http://localhost:3000";
+  // const urlBase = "https://back-ensalamento.onrender.com";
+  const urlBase = "http://localhost:3000";
 
   const btnPrincipal = document.querySelector('#btn-principal');
   const sectionMensagemHome = document.querySelector('#section--mensagem-home');
@@ -11,12 +11,15 @@ window.onload = function() {
   const sectionProcura = document.querySelector('#section-procura');
   const edtProcura = document.querySelector('#edt-procura');
   const carregandoMessage = document.querySelector('#carregando-message');
+  const erroMessage = document.querySelector('#erro-message');
   const btnProcurar = document.querySelector('#btn-procurar');
   const sectionListaSalas = document.querySelector('#section-lista-salas');
 
   function atualizarPrincipal() {
     // Mostrar mensagem de boas vindas
     sectionMensagemHome.style.display = "";
+    // Esconder mensagem de erro
+    erroMessage.style.display = "none";
     // Esconder mensagem de carregando
     carregandoMessage.style.display = "none";
     // Esconder barra de pesquisa
@@ -59,29 +62,37 @@ window.onload = function() {
   }
 
   async function atualizarLista () {
+    // Esconder mensagem de erro
+    erroMessage.style.display = "none";
     // Esconder lista de salas
     sectionListaSalas.innerHTML = "";
     // Mostrar mensagem de carregando
     carregandoMessage.style.display = "";
 
     // Montar URL a submeter
-    const param = `/${edtProcura.value}`;
+    const param = edtProcura.value.trim() === "" ?
+                  `/*` : 
+                  `/${edtProcura.value}`;
     const path = `/ensalamentoM`;
     const endPoint = `${urlBase}${path}${param}`;
     // Submeter procura
     const res = await fetch(`${endPoint}`);
     const data = await res.json();
-
-    // Montar lista de salas
-    let output = "";
-    for(let sala of data)
-      output += criarSala(sala);
-    // Mostrar lista de salas
-    sectionListaSalas.innerHTML = output;
-
+    console.log(data);
+    if (data.length === 0) {
+      // Mostrar mensagem de erro
+      erroMessage.style.display = "";
+    } else {
+      // Montar lista de salas
+      let output = "";
+      for(let sala of data)
+        output += criarSala(sala);
+      // Mostrar lista de salas
+      sectionListaSalas.innerHTML = output;
+    }
     // Esconder mensagem de carregando
     carregandoMessage.style.display = "none";
-  }
+}
 
   btnMatutino.addEventListener('click', () => {
     // Montar página matutino

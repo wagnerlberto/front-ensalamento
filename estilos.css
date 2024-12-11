@@ -9,7 +9,7 @@ body{
 }
 
 header{
-  background-color: orange;
+  background-color: darkorange;
   /* padding: 4px 10px; */
   font-size:large;
   font-weight: bold;
@@ -17,7 +17,7 @@ header{
 }
 
 footer{
-  background-color: darkorange;
+  background-color: orangered;
   /* padding: 1px 10px; */
   width: 95%;
   text-align: center;
@@ -26,7 +26,7 @@ footer{
 }
 
 nav{
-  background-color: darkorange;
+  background-color: orangered;
   /* padding:1px; */
   text-align: center;
 }
@@ -37,14 +37,14 @@ nav ul{
 
 nav ul li{
   display: inline-block;
-  background-color: orange;
+  background-color: darkorange;
   padding:6px;
   border:1px solid gray;
   border-radius: 10%;
 }
 
 nav ul li:hover{
-  background-color: Khaki;
+  background-color: orange;
   border-bottom:1px solid black;
   cursor: pointer;
 }
@@ -55,7 +55,7 @@ nav ul li a{
 }
 
 #section--mensagem-home{
-  background-color: lightgray;
+  background-color: khaki;
   padding: 0px 10px;
   margin: 10px;
   border:1px solid gray;
@@ -72,18 +72,18 @@ nav ul li a{
 }
 
 #section-procura{
-  background-color: orange;
+  background-color: darkorange;
   padding: 10px;
 }
 
 #edt-procura{
-  background-color: Khaki;
+  background-color: orange;
   padding: 8px;
   width: 80%;
 }
 
 #btn-procurar{
-  background-color: Khaki;
+  background-color: orange;
   padding: 10px;
   /* width: 10%; */
   border-radius: 10px;
@@ -110,7 +110,7 @@ nav ul li a{
 }
 
 .sala--linha-tabela{
-  background-color: Khaki;
+  background-color: orange;
   clear: both;
   padding-top: 4px;
   font-weight: bold;
@@ -118,7 +118,14 @@ nav ul li a{
 }
 
 #carregando-message{
-  background-color: Khaki;
+  background-color: orange;
+  font-size: xx-large;
+  text-align: center;
+  font-style: italic;
+}
+
+#erro-message{
+  background-color: orangered;
   font-size: xx-large;
   text-align: center;
   font-style: italic;
