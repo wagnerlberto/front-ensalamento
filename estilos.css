@@ -68,19 +68,19 @@ nav ul li a{
   text-align: justify;
 }
 
-#sectionProcura{
+#section-procura{
   background-color: orange;
   padding: 10px;
 }
 
-#sectionProcura input{
+#edt-procura{
   padding: 4px;
   border-radius: 2%;
   background-color: Khaki;
   width: 300px;
 }
 
-#sectionProcura button{
+#section-procura button{
   padding: 4px;
   background-color: greenyellow;
 }
@@ -105,14 +105,15 @@ nav ul li a{
 }
 
 .salaLinhaTabela{
+  background-color: Khaki;
   clear: both;
   padding-top: 4px;
   font-weight: bold;
   text-align: center;
-  background-color: Khaki;
 }
 
 #carregando-message{
+  background-color: Khaki;
   font-size: xx-large;
   text-align: center;
   font-style: italic;
